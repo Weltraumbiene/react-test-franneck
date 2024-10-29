@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+<html>
+    <body>
+        <div id="app"></div>
+    </body>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+    <script type="text/jsx">
+ 
+        const app = document.getElementById('app'); // Auswahl des div-Elements
+        const root = ReactDOM.createRoot(app);
+        root.render(<h1>Develop. Preview. Ship.</h1>);
+ 
+ 
+    </script>
+</html>
